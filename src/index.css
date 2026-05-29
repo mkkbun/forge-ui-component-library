@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(var(--forge-color-primary));
+  --color-primary-hover: rgb(var(--forge-color-primary-hover));
+  --color-primary-active: rgb(var(--forge-color-primary-active));
+  --color-primary-foreground: rgb(var(--forge-color-primary-foreground));
+
+  --color-accent: rgb(var(--forge-color-accent));
+  --color-accent-hover: rgb(var(--forge-color-accent-hover));
+  --color-accent-foreground: rgb(var(--forge-color-accent-foreground));
+
+  --color-background: rgb(var(--forge-color-background));
+  --color-foreground: rgb(var(--forge-color-foreground));
+  --color-border-forge: rgb(var(--forge-color-border));
+  --color-card-forge: rgb(var(--forge-color-card));
+  --color-card-fg-forge: rgb(var(--forge-color-card-foreground));
+  --color-muted-forge: rgb(var(--forge-color-muted));
+  --color-muted-fg-forge: rgb(var(--forge-color-muted-foreground));
+
+  --color-success: rgb(var(--forge-color-success));
+  --color-success-hover: rgb(var(--forge-color-success-hover));
+  --color-success-foreground: rgb(var(--forge-color-success-foreground));
+
+  --color-error: rgb(var(--forge-color-error));
+  --color-error-hover: rgb(var(--forge-color-error-hover));
+  --color-error-foreground: rgb(var(--forge-color-error-foreground));
+
+  --color-warning: rgb(var(--forge-color-warning));
+  --color-warning-hover: rgb(var(--forge-color-warning-hover));
+  --color-warning-foreground: rgb(var(--forge-color-warning-foreground));
+
+  --color-info: rgb(var(--forge-color-info));
+  --color-info-hover: rgb(var(--forge-color-info-hover));
+  --color-info-foreground: rgb(var(--forge-color-info-foreground));
+
+  --radius-forge-none: var(--forge-radius-none);
+  --radius-forge-sm: var(--forge-radius-sm);
+  --radius-forge-md: var(--forge-radius-md);
+  --radius-forge-lg: var(--forge-radius-lg);
+  --radius-forge-full: var(--forge-radius-full);
+}
+
+@layer base {
+  body {
+    background-color: rgb(var(--forge-color-background));
+    color: rgb(var(--forge-color-foreground));
+    font-family: var(--forge-font-sans);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
